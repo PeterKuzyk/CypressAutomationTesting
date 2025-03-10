@@ -9,11 +9,15 @@
     "type": "git",
     "url": "git+https://github.com/PeterKuzyk/CypressAutomationTesting.git"
   },
-  "author": "",
+  "author": "Peter Kuzyk",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/PeterKuzyk/CypressAutomationTesting/issues"
   },
   "homepage": "https://github.com/PeterKuzyk/CypressAutomationTesting#readme",
-  "description": ""
+  "description": "",
+  "devDependencies": {
+    "cypress": "^14.1.0",
+    "mocha": "^11.1.0"
+  }
 }

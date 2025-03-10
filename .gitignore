@@ -1,0 +1,33 @@
+# Cypress test output (videos, screenshots, and downloads)
+cypress/videos/
+cypress/screenshots/
+cypress/downloads/
+
+# Cypress cache
+.cypress_cache/
+
+# Node modules (dependencies)
+node_modules/
+
+# Environment files (avoid committing secrets)
+cypress.env.json
+.env
+.env.local
+.env.*.local
+
+# npm / yarn logs
+npm-debug.log*
+yarn-debug.log*
+pnpm-debug.log*
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# Editor & IDE settings
+.vscode/
+.idea/
+
+# Build artifacts (if applicable)
+dist/
+build/
