@@ -4,8 +4,11 @@ describe('Test4 Section 7', () => {
         cy.visit('https://rahulshettyacademy.com/AutomationPractice/');
     }
 
-    it('Use method check() , should(), and()', () => {
+    beforeEach(() => {
         openPracticePage();
+    })
+
+    it('Use method check() , should(), and()', () => {
         // incorrect way of doing assertion
         //cy.get('#checkBoxOption1').check().should('be.checked');
         cy.get('#checkBoxOption1').check();
@@ -20,7 +23,6 @@ describe('Test4 Section 7', () => {
     })
 
     it('Use method uncheck() , should()', () => {
-        openPracticePage();
         cy.get('#checkBoxOption1').check();
         cy.get('#checkBoxOption1').should('be.checked');
         cy.get('#checkBoxOption1').uncheck();
@@ -28,18 +30,15 @@ describe('Test4 Section 7', () => {
     })
 
     it('Check multiple checkboxes', () => {
-        openPracticePage();
         cy.get("input[type='checkbox']").check(['option2', 'option2']);
     })
 
     it('Static dropdowns - using select()', () => {
-        openPracticePage();
         cy.get('select').select('option2');
         cy.get('select').should('have.value', 'option2');
     });
 
     it('Dynamic dropdowns', () => {
-        openPracticePage();
         cy.get("#autocomplete").type("ind");
         // find all elements that contain "ind" find India and click on it
         cy.get(".ui-menu-item div ").each(($el) => {
@@ -51,7 +50,6 @@ describe('Test4 Section 7', () => {
     });
 
     it('Verify visibility using Chai assertions', () => {
-        openPracticePage();
         cy.get("#displayed-text").should('be.visible');
         cy.get('#hide-textbox').click();
         cy.get('#displayed-text').should('not.be.visible');
@@ -60,7 +58,6 @@ describe('Test4 Section 7', () => {
     });
 
     it('Radio buttons - works the same as checkboxes', () => {
-        openPracticePage();
         cy.get('input[value=\'radio1\']').check();
         cy.get('input[value=\'radio1\']').should('be.checked');
     })
