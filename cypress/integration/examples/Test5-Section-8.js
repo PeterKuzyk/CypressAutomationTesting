@@ -55,3 +55,4 @@ describe('Section 8 test', () => {
         cy.url().should('include', 'top');
     });
 });
+ 

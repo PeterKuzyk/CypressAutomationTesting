@@ -1,1 +1,47 @@
-This Repo was created for QA Team practice with Cypress
+This Repo was created for QA Team Training with Cypress Test Automation using JS
+
+### Setup Instructions for the Cypress Project
+1. **Prerequisites**:
+    - Install [Node.js](https://nodejs.org/) if not already installed. Make sure to install a version compatible with your project dependencies (check the `package.json` file for compatibility).
+    - Ensure **npm** (Node Package Manager) is installed. It comes with Node.js.
+
+2. **Clone the Repository**:
+    - Clone the project repository using the following command:
+``` bash
+     git clone <repository-url>
+```
+- Replace `<repository-url>` with the actual repository URL.
+    1. **Navigate to the Project Directory**:
+        - Change to the project's root directory:
+``` bash
+     cd <project-directory>
+```
+1. **Install Dependencies**:
+    - Run the following command to install all necessary project dependencies listed in `package.json`:
+``` bash
+     npm install
+```
+1. **Open the Project in an IDE**:
+    - Open the project in your preferred IDE (e.g., WebStorm) to start working with Cypress or customizing the tests.
+
+2. **Run Cypress**:
+    - Execute the following command to open the Cypress Test Runner:
+``` bash
+     npx cypress open 
+     or ./node_modules/.bin/cypress open    
+
+```
+- Use the Test Runner to execute and debug the tests interactively.
+- Alternatively, if you want to run tests in headless mode, use:
+``` bash
+     npx cypress run
+```
+1. **Verify Setup**:
+    - Ensure that all dependencies are installed correctly, and the Cypress Test Runner opens without any issues.
+
+2. **Additional Notes** (Optional):
+    - Add or modify dependencies by editing the `package.json` file and running `npm install`.
+    - For any specific testing framework or library integration, review the `README.md` or accompanying project documentation.
+
+
+
