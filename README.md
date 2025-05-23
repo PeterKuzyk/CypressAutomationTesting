@@ -16,13 +16,31 @@
 ``` bash
      cd <project-directory>
 ```
+
+1. **Creating and Configuring `package.json`**
+
+ - If the repository does not have a `package.json` file, create a new one by running:
+``` bash
+   npm init -y
+```
+This generates a `package.json` file with default values.
+
+
 1. **Install Dependencies**:
     - Run the following command to install all necessary project dependencies listed in `package.json`:
 ``` bash
      npm install
 ```
+
 1. **Open the Project in an IDE**:
     - Open the project in your preferred IDE (e.g., WebStorm) to start working with Cypress or customizing the tests.
+
+
+1. **Install Cypress as a development dependency:**
+``` bash
+   npm install cypress --save-dev
+```
+
 
 2. **Run Cypress**:
     - Execute the following command to open the Cypress Test Runner:
