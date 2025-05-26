@@ -4,7 +4,7 @@ import 'cypress-iframe';
 
 describe('Understand How to Automate Frames, Child windows, Calendars', () => {
 
-    it.skip('Child Windows in Cypress ', () => {
+    it('Child Windows in Cypress ', () => {
         cy.visit('https://rahulshettyacademy.com/AutomationPractice/');
         cy.get('#opentab').then(function (el) {
                 const url = el.prop('href');
@@ -16,7 +16,7 @@ describe('Understand How to Automate Frames, Child windows, Calendars', () => {
         );
     });
 
-    it.skip('Handling Frames with Cypress', () => {
+    it('Handling Frames with Cypress', () => {
         cy.visit('https://rahulshettyacademy.com/AutomationPractice/');
         cy.frameLoaded('#courses-iframe');
         cy.iframe().find("a[href*='mentorship").should("exist");
