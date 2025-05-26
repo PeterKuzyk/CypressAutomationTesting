@@ -18,6 +18,7 @@
   "description": "",
   "devDependencies": {
     "cypress": "^14.1.0",
+    "cypress-iframe": "^1.0.1",
     "mocha": "^11.1.0"
   }
 }
