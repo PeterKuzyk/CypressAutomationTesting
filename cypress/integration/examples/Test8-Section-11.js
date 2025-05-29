@@ -1,0 +1,37 @@
+describe('Working with fixtures', () => {
+
+    // Load the fixture data before all tests
+    before(function () {
+        cy.fixture('example').then((data) => {
+            this.data = data;
+        });
+    });
+
+    it('Get data from fixture file', function () {
+
+        const product = this.data.productName;
+
+        // Visit the login page
+        cy.visit('https://rahulshettyacademy.com/loginpagePractise/');
+
+        // Login using fixture data
+        cy.get('#username').type(this.data.username);
+        cy.get('#password').type(this.data.password);
+        cy.get('#signInBtn').click();
+
+        // Verify the dashboard element
+        cy.contains('Shop Name').should('be.visible');
+        cy.get('app-card').filter(`:contains("${product}")`)
+            .then($element => {
+                cy.wrap($element).should('have.length', 1);
+                // example of doing click using contains()
+                //cy.wrap($element).contains('button', 'Add').click();
+                cy.wrap($element).find('button').click();
+            });
+    });
+
+    it('Example of increased wait time ', () => {
+        // add in on the beginning of it block or before the step
+        Cypress.config('defaultCommandTimeout', 10000);
+    });
+});
