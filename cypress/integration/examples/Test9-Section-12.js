@@ -37,7 +37,7 @@ describe('Environment variables & Reports', () => {
     })
 
     it('Reports', () => {
-// Mochawesome reporter
+
 
     })
 })
