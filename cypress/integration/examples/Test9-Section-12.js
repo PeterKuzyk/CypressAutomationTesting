@@ -36,8 +36,23 @@ describe('Environment variables & Reports', () => {
         });
     })
 
-    it('Reports', () => {
-
+    it('Reporter test - configured to Fail as reporter example', function () {
+        const product = this.data.productName;
+        homePage.gotoHomePage(Cypress.env('url') + "/loginpagePractise/");
+        homePage.login(this.data.username, this.data.password);
+        productPage.pageValidation();
+        productPage.verifyCardLimit();
+        productPage.selectProduct(product);
+        productPage.selectFirstProduct();
+        productPage.goToCart();
+        cartPage.sumOfProducts().then((sum) => {
+            expect(sum).to.be.lessThan(100000);
+        });
+        cartPage.clickCheckout();
+        confirmationPage.submitUSFormDetails();
+        confirmationPage.getAlertMessage().then((message) => {
+            expect(message).to.include('United States of America'); // Correct assertion syntax
+        });
 
     })
 })
