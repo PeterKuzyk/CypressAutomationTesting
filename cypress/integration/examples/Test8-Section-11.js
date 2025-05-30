@@ -12,14 +12,13 @@ const confirmationPage = new ConfirmationPage();
 describe('Working with fixtures', () => {
 
     // Load the fixture data before all tests
-    before(function () {
+    beforeEach(function () {
         cy.fixture('example').then((data) => {
             this.data = data;
         });
     });
 
-
-    it.skip('Get data from fixture file', function () {
+    it('Get data from fixture file', function () {
         const product = this.data.productName;
         // Visit the login page
         cy.visit('https://rahulshettyacademy.com/loginpagePractise/');
@@ -40,12 +39,14 @@ describe('Working with fixtures', () => {
             });
     });
 
-    it.skip('Example of increased wait time ', function () {
+    it('Example of increased wait time ', function () {
         // add in on the beginning of it block or before the step
         Cypress.config('defaultCommandTimeout', 10000);
     });
 
     it('Using POM and custom function', function () {
+        cy.log('Accessing fixture data in test:', JSON.stringify(this.data));
+
         const product = this.data.productName;
         homePage.gotoHomePage("https://rahulshettyacademy.com/loginpagePractise/#/")
         homePage.login(this.data.username, this.data.password);
@@ -54,11 +55,13 @@ describe('Working with fixtures', () => {
         productPage.selectProduct(product);
         productPage.selectFirstProduct();
         productPage.goToCart();
-        cartPage.sumOfProducts().then( (sum) => {
+        cartPage.sumOfProducts().then((sum) => {
             expect(sum).to.be.lessThan(200000);
-        })
-
+        });
         cartPage.clickCheckout();
         confirmationPage.submitUSFormDetails();
-    });
+        confirmationPage.getAlertMessage().then((message) => {
+            expect(message).to.include('United States of America'); // Correct assertion syntax
+        });
+    })
 });

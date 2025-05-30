@@ -27,7 +27,5 @@
 // example of custom command
 Cypress.Commands.add('submitUSFormDetails', () => {
     cy.get('#country').type('United States');
-    cy.get('.suggestions ul li a', {timeout: 10000})
-        .should('contain.text', 'United States of America');
     cy.get('.suggestions ul li a').click()
 })

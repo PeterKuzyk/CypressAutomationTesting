@@ -9,12 +9,18 @@ class CartPage {
     }
 
     sumOfProducts(){
-        let sum = 0;
-        cy.get('tr td:nth-child(4) strong').each(($el, index, $list) => {
-            const amount = Number($el.text().split(" ")[1].trim());
-            sum = sum + amount;
-        })
-           return sum;
+
+        return cy.get('tr td:nth-child(4) strong').then(($elements) => {
+            let sum = 0;
+
+            $elements.each((index, el) => {
+                const amount = Number(Cypress.$(el).text().split(" ")[1].trim());
+                sum += amount;
+            });
+
+            return sum;
+        });
+
     }
 }
 
