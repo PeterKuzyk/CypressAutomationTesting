@@ -1,11 +1,13 @@
 import HomePage from '../../support/pageObjects/HomePage';
 import ProductPage from "../../support/pageObjects/ProductPage";
 import CartPage from "../../support/pageObjects/CartPage";
+import ConfirmationPage from "../../support/pageObjects/ConfirmationPage";
 
 
 const homePage = new HomePage();
 const productPage = new ProductPage();
 const cartPage = new CartPage();
+const confirmationPage = new ConfirmationPage();
 
 describe('Working with fixtures', () => {
 
@@ -43,7 +45,7 @@ describe('Working with fixtures', () => {
         Cypress.config('defaultCommandTimeout', 10000);
     });
 
-    it('Using POM', function () {
+    it('Using POM and custom function', function () {
         const product = this.data.productName;
         homePage.gotoHomePage("https://rahulshettyacademy.com/loginpagePractise/#/")
         homePage.login(this.data.username, this.data.password);
@@ -52,5 +54,11 @@ describe('Working with fixtures', () => {
         productPage.selectProduct(product);
         productPage.selectFirstProduct();
         productPage.goToCart();
+        cartPage.sumOfProducts().then( (sum) => {
+            expect(sum).to.be.lessThan(200000);
+        })
+
+        cartPage.clickCheckout();
+        confirmationPage.submitUSFormDetails();
     });
 });
