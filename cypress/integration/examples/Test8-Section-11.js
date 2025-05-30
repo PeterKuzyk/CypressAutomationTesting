@@ -45,7 +45,6 @@ describe('Working with fixtures', () => {
     });
 
     it('Using POM and custom function', function () {
-        cy.log('Accessing fixture data in test:', JSON.stringify(this.data));
 
         const product = this.data.productName;
         homePage.gotoHomePage("https://rahulshettyacademy.com/loginpagePractise/#/")
