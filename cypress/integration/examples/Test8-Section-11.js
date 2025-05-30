@@ -1,3 +1,12 @@
+import HomePage from '../../support/pageObjects/HomePage';
+import ProductPage from "../../support/pageObjects/ProductPage";
+import CartPage from "../../support/pageObjects/CartPage";
+
+
+const homePage = new HomePage();
+const productPage = new ProductPage();
+const cartPage = new CartPage();
+
 describe('Working with fixtures', () => {
 
     // Load the fixture data before all tests
@@ -7,10 +16,9 @@ describe('Working with fixtures', () => {
         });
     });
 
-    it('Get data from fixture file', function () {
 
+    it.skip('Get data from fixture file', function () {
         const product = this.data.productName;
-
         // Visit the login page
         cy.visit('https://rahulshettyacademy.com/loginpagePractise/');
 
@@ -30,8 +38,19 @@ describe('Working with fixtures', () => {
             });
     });
 
-    it('Example of increased wait time ', () => {
+    it.skip('Example of increased wait time ', function () {
         // add in on the beginning of it block or before the step
         Cypress.config('defaultCommandTimeout', 10000);
+    });
+
+    it('Using POM', function () {
+        const product = this.data.productName;
+        homePage.gotoHomePage("https://rahulshettyacademy.com/loginpagePractise/#/")
+        homePage.login(this.data.username, this.data.password);
+        productPage.pageValidation();
+        productPage.verifyCardLimit();
+        productPage.selectProduct(product);
+        productPage.selectFirstProduct();
+        productPage.goToCart();
     });
 });
