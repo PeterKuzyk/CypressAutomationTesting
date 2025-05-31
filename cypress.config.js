@@ -1,4 +1,6 @@
+/// <reference types="Cypress" />
 const { defineConfig } = require("cypress");
+const cucumber = require('cypress-cucumber-preprocessor').default;
 const watch = require('cypress-watch-and-reload/plugins'); // Import the plugin
 
 module.exports = defineConfig({
@@ -33,12 +35,18 @@ module.exports = defineConfig({
       // // Apply the plugin's setupNodeEvents
       // return watch(on, config);
 
+
+      on('file:preprocessor', cucumber());
       // mochawesome-reporter configs
       require('cypress-mochawesome-reporter/plugin')(on);
 
     },
 
-    specPattern: 'cypress/integration/examples/*.js',
+    specPattern: [
+        'cypress/integration/examples/*.js',
+        'cypress/integration/examples/BDD/*.feature'
+        ],
+
     watchForFileChanges: false,
   },
 });

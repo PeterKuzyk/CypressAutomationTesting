@@ -1,0 +1,82 @@
+[
+  {
+    "keyword": "Feature",
+    "name": "E2E Ecommerce Validation",
+    "line": 1,
+    "id": "e2e-ecommerce-validation",
+    "tags": [],
+    "uri": "ecommerce.feature",
+    "elements": [
+      {
+        "id": "e2e-ecommerce-validation;ecommerce-product-delivery",
+        "keyword": "Scenario",
+        "line": 3,
+        "name": "Ecommerce product delivery",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "I am on Ecommerce page",
+            "result": {
+              "status": "passed",
+              "duration": 953000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 5,
+            "name": "I login to the application",
+            "result": {
+              "status": "passed",
+              "duration": 661000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 6,
+            "name": "I add items to Card and checkout",
+            "result": {
+              "status": "passed",
+              "duration": 2779000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 7,
+            "name": "I should total price limits",
+            "result": {
+              "status": "passed",
+              "duration": 208000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 8,
+            "name": "I select the country and submit",
+            "result": {
+              "status": "passed",
+              "duration": 5671000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 9,
+            "name": "I should see the Thank You",
+            "result": {
+              "status": "passed",
+              "duration": 84000000
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

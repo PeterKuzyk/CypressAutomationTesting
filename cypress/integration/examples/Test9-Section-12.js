@@ -32,7 +32,7 @@ describe('Environment variables & Reports', () => {
         cartPage.clickCheckout();
         confirmationPage.submitUSFormDetails();
         confirmationPage.getAlertMessage().then((message) => {
-            expect(message).to.include('United States of America'); // Correct assertion syntax
+            expect(message).to.include('United States of America');
         });
     })
 
@@ -54,5 +54,9 @@ describe('Environment variables & Reports', () => {
         confirmationPage.getAlertMessage().then((message) => {
             expect(message).to.include('United States of America'); // Correct assertion syntax
         });
+        confirmationPage.clickPurchase();
+        confirmationPage.geSuccessMessage().then(message => {
+            expect(message).to.contain('Success!');
+        })
     })
 })
