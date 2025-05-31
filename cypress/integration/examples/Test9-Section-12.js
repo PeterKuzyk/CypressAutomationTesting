@@ -36,7 +36,8 @@ describe('Environment variables & Reports', () => {
         });
     })
 
-    it('Reporter test - configured to Fail as reporter example', function () {
+    it.skip('Reporter test - configured to Fail as reporter example', function () {
+
         const product = this.data.productName;
         homePage.gotoHomePage(Cypress.env('url') + "/loginpagePractise/");
         homePage.login(this.data.username, this.data.password);
@@ -53,6 +54,5 @@ describe('Environment variables & Reports', () => {
         confirmationPage.getAlertMessage().then((message) => {
             expect(message).to.include('United States of America'); // Correct assertion syntax
         });
-
     })
 })
