@@ -3,7 +3,9 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "reporter" : "npx cypress run",
+    "chrome": "npx cypress open --e2e --browser chrome"
   },
   "repository": {
     "type": "git",
@@ -19,6 +21,7 @@
   "devDependencies": {
     "cypress": "^14.1.0",
     "cypress-iframe": "^1.0.1",
+    "cypress-mochawesome-reporter": "^3.8.2",
     "cypress-watch-and-reload": "^1.10.19",
     "dayjs": "^1.11.13",
     "mocha": "^11.1.0"

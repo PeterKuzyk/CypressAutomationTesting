@@ -61,5 +61,10 @@ This generates a `package.json` file with default values.
     - Add or modify dependencies by editing the `package.json` file and running `npm install`.
     - For any specific testing framework or library integration, review the `README.md` or accompanying project documentation.
 
+10 **Mochawesome Report Examole**:
+- To generate report run command
+- Reports located reports folder
+``` bash
+   npm run reporter
 
-
+http://localhost:63342/CypressAutomationTesting/cypress/reports/html/index.html?_ijt=a3qtedd13cg47pm769o63dhutf&_ij_reload=RELOAD_ON_SAVE
