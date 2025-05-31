@@ -2,6 +2,7 @@ const { defineConfig } = require("cypress");
 const watch = require('cypress-watch-and-reload/plugins'); // Import the plugin
 
 module.exports = defineConfig({
+  projectId: 'kgy48c',
   // it can override default 4000 ms to time you need, works globally, not the best solution
   defaultCommandTimeout: 6000,
   // mochawesome-reporter configs
@@ -16,6 +17,11 @@ module.exports = defineConfig({
 
   env: {
     url: "https://rahulshettyacademy.com",
+  },
+
+  retries: {
+    runMode: 1,
+
   },
 
   e2e: {
