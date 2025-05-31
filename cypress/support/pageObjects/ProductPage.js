@@ -2,7 +2,6 @@ import CartPage from "./CartPage";
 
 class ProductPage {
 
-
     pageValidation() {
         cy.contains('Shop Name').should('be.visible');
     }

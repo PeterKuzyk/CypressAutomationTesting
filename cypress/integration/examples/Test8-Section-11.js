@@ -3,7 +3,6 @@ import ProductPage from "../../support/pageObjects/ProductPage";
 import CartPage from "../../support/pageObjects/CartPage";
 import ConfirmationPage from "../../support/pageObjects/ConfirmationPage";
 
-
 const homePage = new HomePage();
 const productPage = new ProductPage();
 const cartPage = new CartPage();
@@ -62,5 +61,9 @@ describe('Working with fixtures', () => {
         confirmationPage.getAlertMessage().then((message) => {
             expect(message).to.include('United States of America'); // Correct assertion syntax
         });
+        confirmationPage.clickPurchase();
+        confirmationPage.geSuccessMessage().then(message => {
+            expect(message).to.contain('Success!');
+        })
     })
 });

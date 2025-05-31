@@ -5,7 +5,6 @@ class CartPage {
     clickCheckout() {
         cy.contains('button', "Checkout").click();
         return new ConfirmationPage();
-
     }
 
     sumOfProducts(){
@@ -20,7 +19,6 @@ class CartPage {
 
             return sum;
         });
-
     }
 }
 
