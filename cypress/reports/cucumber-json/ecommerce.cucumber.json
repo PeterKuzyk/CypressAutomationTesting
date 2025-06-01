@@ -1,0 +1,249 @@
+[
+  {
+    "keyword": "Feature",
+    "name": "E2E Ecommerce Validation",
+    "line": 1,
+    "id": "e2e-ecommerce-validation",
+    "tags": [],
+    "uri": "ecommerce.feature",
+    "elements": [
+      {
+        "id": "e2e-ecommerce-validation;ecommerce-product-delivery",
+        "keyword": "Scenario",
+        "line": 4,
+        "name": "Ecommerce product delivery",
+        "tags": [
+          {
+            "name": "@Smoke",
+            "line": 3
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 5,
+            "name": "I am on Ecommerce page",
+            "result": {
+              "status": "passed",
+              "duration": 670000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 6,
+            "name": "I login to the application",
+            "result": {
+              "status": "passed",
+              "duration": 753000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 7,
+            "name": "I add items to Card and checkout",
+            "result": {
+              "status": "passed",
+              "duration": 5134000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 8,
+            "name": "I should total price limits",
+            "result": {
+              "status": "passed",
+              "duration": 132000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 9,
+            "name": "I select the country and submit",
+            "result": {
+              "status": "passed",
+              "duration": 5433000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 10,
+            "name": "I should see the Thank You",
+            "result": {
+              "status": "passed",
+              "duration": 9000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "e2e-ecommerce-validation;ecommerce-product-delivery-using-datatable",
+        "keyword": "Scenario",
+        "line": 13,
+        "name": "Ecommerce product delivery using dataTable",
+        "tags": [
+          {
+            "name": "@Regression",
+            "line": 12
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 14,
+            "name": "I am on Ecommerce page",
+            "result": {
+              "status": "passed",
+              "duration": 1022000000
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "username",
+                      "password"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "rahulshettyacademy",
+                      "learning"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "When ",
+            "line": 15,
+            "name": "I login to the application portal",
+            "result": {
+              "status": "passed",
+              "duration": 667000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 18,
+            "name": "I add items to Card and checkout",
+            "result": {
+              "status": "passed",
+              "duration": 4495000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 19,
+            "name": "I should total price limits",
+            "result": {
+              "status": "passed",
+              "duration": 118000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 20,
+            "name": "I select the country and submit",
+            "result": {
+              "status": "passed",
+              "duration": 5392000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 21,
+            "name": "I should see the Thank You",
+            "result": {
+              "status": "passed",
+              "duration": 8000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "e2e-ecommerce-validation;:-ecommerce-product-delivery-using-scenario-outline-datatable",
+        "keyword": "Scenario",
+        "line": 33,
+        "name": ": Ecommerce product delivery using Scenario Outline dataTable",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 24,
+            "name": "I am on Ecommerce page",
+            "result": {
+              "status": "passed",
+              "duration": 997000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 25,
+            "name": "I login to the application Portal using rahulshettyacademy and learning",
+            "result": {
+              "status": "passed",
+              "duration": 657000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 26,
+            "name": "I add items to Card and checkout",
+            "result": {
+              "status": "passed",
+              "duration": 2567000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 27,
+            "name": "I should total price limits",
+            "result": {
+              "status": "passed",
+              "duration": 112000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 28,
+            "name": "I select the country and submit",
+            "result": {
+              "status": "passed",
+              "duration": 5409000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 29,
+            "name": "I should see the Thank You",
+            "result": {
+              "status": "passed",
+              "duration": 7000000
+            }
+          }
+        ]
+      }
+    ]
+  }
+]
