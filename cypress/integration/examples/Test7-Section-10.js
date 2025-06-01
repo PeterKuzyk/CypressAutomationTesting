@@ -69,6 +69,9 @@ describe('E2E ecommerce Flow', () => {
         cy.get('#country').type('United States');
         cy.get('.suggestions ul li a', { timeout: 10000 })
             .should('contain.text', 'United States of America');
+        cy.on('window:alert', (alertText) => {
+            cy.log(`Alert text: ${alertText}`);
+        });
         cy.get('.suggestions ul li a').click()
         cy.get('.btn-success').click()
         cy.get('.alert-success').should('contain', 'Success');

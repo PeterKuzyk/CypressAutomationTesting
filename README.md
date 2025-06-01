@@ -66,5 +66,10 @@ This generates a `package.json` file with default values.
 - Reports located reports folder
 ``` bash
    npm run reporter
-
+```
 http://localhost:63342/CypressAutomationTesting/cypress/reports/html/index.html?_ijt=a3qtedd13cg47pm769o63dhutf&_ij_reload=RELOAD_ON_SAVE
+
+
+11 **Cucumber HTML Reporter**:
+- Report Example Using Multiple Cucumber HTML Reporter 
+- https://shorturl.at/IFXzM

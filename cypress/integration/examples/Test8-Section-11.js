@@ -59,8 +59,9 @@ describe('Working with fixtures', () => {
         cartPage.clickCheckout();
         confirmationPage.submitUSFormDetails();
         confirmationPage.getAlertMessage().then((message) => {
-            expect(message).to.include('United States of America'); // Correct assertion syntax
+            expect(message).to.include('United States of America');
         });
+        confirmationPage.acceptAlert();
         confirmationPage.clickPurchase();
         confirmationPage.geSuccessMessage().then(message => {
             expect(message).to.contain('Success!');

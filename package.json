@@ -24,7 +24,8 @@
     "cypress-mochawesome-reporter": "^3.8.2",
     "cypress-watch-and-reload": "^1.10.19",
     "dayjs": "^1.11.13",
-    "mocha": "^11.1.0"
+    "mocha": "^11.1.0",
+    "multiple-cucumber-html-reporter": "^3.9.2"
   },
   "dependencies": {
     "@badeball/cypress-cucumber-preprocessor": "^22.0.1",
@@ -35,9 +36,12 @@
     "nonGlobalStepDefinitions": true,
     "cucumberJson": {
       "generate": true,
-      "outputFolder": "cypress/cucumber-json",
+      "outputFolder": "cypress/reports/cucumber-json",
       "filePrefix": "",
       "fileSuffix": ".cucumber"
+    },
+    "json": {
+      "enabled": true
     }
   }
 }
