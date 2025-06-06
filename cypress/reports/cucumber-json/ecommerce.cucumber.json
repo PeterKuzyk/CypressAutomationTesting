@@ -27,7 +27,7 @@
             "name": "I am on Ecommerce page",
             "result": {
               "status": "passed",
-              "duration": 670000000
+              "duration": 492000000
             }
           },
           {
@@ -37,7 +37,7 @@
             "name": "I login to the application",
             "result": {
               "status": "passed",
-              "duration": 753000000
+              "duration": 769000000
             }
           },
           {
@@ -47,7 +47,7 @@
             "name": "I add items to Card and checkout",
             "result": {
               "status": "passed",
-              "duration": 5134000000
+              "duration": 5390000000
             }
           },
           {
@@ -57,7 +57,7 @@
             "name": "I should total price limits",
             "result": {
               "status": "passed",
-              "duration": 132000000
+              "duration": 135000000
             }
           },
           {
@@ -67,7 +67,7 @@
             "name": "I select the country and submit",
             "result": {
               "status": "passed",
-              "duration": 5433000000
+              "duration": 5501000000
             }
           },
           {
@@ -77,7 +77,7 @@
             "name": "I should see the Thank You",
             "result": {
               "status": "passed",
-              "duration": 9000000
+              "duration": 7000000
             }
           }
         ]
@@ -102,7 +102,7 @@
             "name": "I am on Ecommerce page",
             "result": {
               "status": "passed",
-              "duration": 1022000000
+              "duration": 1008000000
             }
           },
           {
@@ -129,7 +129,7 @@
             "name": "I login to the application portal",
             "result": {
               "status": "passed",
-              "duration": 667000000
+              "duration": 662000000
             }
           },
           {
@@ -139,7 +139,7 @@
             "name": "I add items to Card and checkout",
             "result": {
               "status": "passed",
-              "duration": 4495000000
+              "duration": 2584000000
             }
           },
           {
@@ -149,7 +149,7 @@
             "name": "I should total price limits",
             "result": {
               "status": "passed",
-              "duration": 118000000
+              "duration": 116000000
             }
           },
           {
@@ -159,7 +159,7 @@
             "name": "I select the country and submit",
             "result": {
               "status": "passed",
-              "duration": 5392000000
+              "duration": 5385000000
             }
           },
           {
@@ -189,7 +189,7 @@
             "name": "I am on Ecommerce page",
             "result": {
               "status": "passed",
-              "duration": 997000000
+              "duration": 1009000000
             }
           },
           {
@@ -199,7 +199,7 @@
             "name": "I login to the application Portal using rahulshettyacademy and learning",
             "result": {
               "status": "passed",
-              "duration": 657000000
+              "duration": 659000000
             }
           },
           {
@@ -209,7 +209,7 @@
             "name": "I add items to Card and checkout",
             "result": {
               "status": "passed",
-              "duration": 2567000000
+              "duration": 2580000000
             }
           },
           {
@@ -219,7 +219,7 @@
             "name": "I should total price limits",
             "result": {
               "status": "passed",
-              "duration": 112000000
+              "duration": 109000000
             }
           },
           {
@@ -229,7 +229,7 @@
             "name": "I select the country and submit",
             "result": {
               "status": "passed",
-              "duration": 5409000000
+              "duration": 5388000000
             }
           },
           {
