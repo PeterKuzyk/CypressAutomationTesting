@@ -121,23 +121,23 @@ class BasicAlgorithms {
 }
 
 // Example Usage
-console.log(BasicAlgorithms.reverseString("hello"));               // Output: "olleh"
-console.log(BasicAlgorithms.isPrime(17));                          // Output: true
-console.log(BasicAlgorithms.factorial(5));                         // Output: 120
-console.log(BasicAlgorithms.isPalindrome("racecar"));              // Output: true
-console.log(BasicAlgorithms.findLargest([10, 50, 20, 7]));         // Output: 50
-console.log(BasicAlgorithms.fibonacci(7));                         // Output: [0, 1, 1, 2, 3, 5, 8, 13]
-console.log(BasicAlgorithms.arraySum([1, 2, 3]));                  // Output: 6
-console.log(BasicAlgorithms.arrayIntersection([1, 2], [2, 3]));    // Output: [2]
-console.log(BasicAlgorithms.countVowels("hello world"));           // Output: 3
-console.log(BasicAlgorithms.fizzBuzz(15));                         // Output: [1, 2, "Fizz", 4, "Buzz", "Fizz", ...]
-console.log(BasicAlgorithms.isEven(4));                            // Output: true
-console.log(BasicAlgorithms.gcd(24, 36));                          // Output: 12
-console.log(BasicAlgorithms.lcm(5, 12));                           // Output: 60
-console.log(BasicAlgorithms.removeDuplicates([1, 2, 2, 3]));       // Output: [1, 2, 3]
-console.log(BasicAlgorithms.sortArray([4, 1, 3, 2]));              // Output: [1, 2, 3, 4]
-console.log(BasicAlgorithms.areAnagrams("listen", "silent"));      // Output: true
-console.log(BasicAlgorithms.celsiusToFahrenheit(25));              // Output: 77
-console.log(BasicAlgorithms.fahrenheitToCelsius(77));              // Output: 25
-console.log(BasicAlgorithms.power(2, 3));                          // Output: 8
-console.log(BasicAlgorithms.randomInt(1, 10));                     // Output: Random integer between 1 and 10
+console.log("reverseString: " + BasicAlgorithms.reverseString("hello"));               // Output: "olleh"
+console.log("isPrime: " + BasicAlgorithms.isPrime(17));                          // Output: true
+console.log("factorial: " + BasicAlgorithms.factorial(5));                         // Output: 120
+console.log("isPalindrome: " + BasicAlgorithms.isPalindrome("racecar"));              // Output: true
+console.log("findLargest: " + BasicAlgorithms.findLargest([10, 50, 20, 7]));         // Output: 50
+console.log("fibonacci: " + BasicAlgorithms.fibonacci(7));                         // Output: [0, 1, 1, 2, 3, 5, 8, 13]
+console.log("arraySum: " + BasicAlgorithms.arraySum([1, 2, 3]));                  // Output: 6
+console.log("arrayIntersection: " + BasicAlgorithms.arrayIntersection([1, 2], [2, 3]));    // Output: [2]
+console.log("countVowels: " + BasicAlgorithms.countVowels("hello world"));           // Output: 3
+console.log("fizzBuzz: " + BasicAlgorithms.fizzBuzz(15));                         // Output: [1, 2, "Fizz", 4, "Buzz", "Fizz", ...]
+console.log("isEven: " + BasicAlgorithms.isEven(4));                            // Output: true
+console.log("gcd: " + BasicAlgorithms.gcd(24, 36));                          // Output: 12
+console.log("lcm: " + BasicAlgorithms.lcm(5, 12));                           // Output: 60
+console.log("removeDuplicates: " + BasicAlgorithms.removeDuplicates([1, 2, 2, 3]));       // Output: [1, 2, 3]
+console.log("sortArray: " + BasicAlgorithms.sortArray([4, 1, 3, 2]));              // Output: [1, 2, 3, 4]
+console.log("areAnagrams: " + BasicAlgorithms.areAnagrams("listen", "silent"));      // Output: true
+console.log("celsiusToFahrenheit: " + BasicAlgorithms.celsiusToFahrenheit(25));              // Output: 77
+console.log("fahrenheitToCelsius: " + BasicAlgorithms.fahrenheitToCelsius(77));              // Output: 25
+console.log("power: " + BasicAlgorithms.power(2, 3));                          // Output: 8
+console.log("randomInt: " + BasicAlgorithms.randomInt(1, 10));                     // Output: Random integer between 1 and 10
