@@ -1,4 +1,4 @@
-# **This Repo was created for QA Team Training with Cypress Test Automation using JS**
+# **This Repo was created for QA Team Training with Cypress Test Automation using JS (Beginner-Friendly)**
 
 ### Setup Instructions for the Cypress Project
 1. **Prerequisites**:
