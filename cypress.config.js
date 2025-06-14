@@ -18,6 +18,7 @@ module.exports = defineConfig({
 
     env: {
         url: "https://rahulshettyacademy.com",
+        jsonPlaceholderURL: "https://jsonplaceholder.typicode.com",
     },
 
     retries: {
@@ -37,7 +38,7 @@ module.exports = defineConfig({
         specPattern: [
             'cypress/integration/Sections/*.js',
             'cypress/integration/examples/BDD/*.feature',
-            'cypress/integration/API/*.js'
+            'cypress/integration/API/*/*.js'
         ],
 
         watchForFileChanges: false,
